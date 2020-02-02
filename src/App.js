@@ -3,7 +3,7 @@ import './App.css';
 import THINGS from './things.js';
 import { getWeekNumber, useInterval, getTimeText, getDateText } from './utils';
 
-const weekNum = getWeekNumber();
+const weekNum = getWeekNumber(new Date());
 const baseBackgroundURL = 'background/sputnik-';
 const backgroundChoice = Math.floor(Math.random() * 10 + 1);
 
@@ -32,10 +32,10 @@ function App() {
       <div className="saying">
         <span className="saying-item">
           {
-            currWeek > 0 && <span className="arrow" onClick={previousWeek}>{"<"}</span>
+            currWeek - 1 > 0 && <span className="arrow" onClick={previousWeek}>{"<"}</span>
           }
         </span>
-        <span className="text saying-item">{THINGS[currWeek]}</span>
+        <span className="text saying-item">{THINGS[currWeek - 1]}</span>
         <span className="saying-item">
           {
             currWeek < weekNum && <span className="arrow" onClick={nextWeek}>></span>

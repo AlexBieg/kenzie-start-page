@@ -20,8 +20,7 @@ export const useInterval = (callback, delay) => {
   }, [delay]);
 }
 
-export const getWeekNumber = () => {
-  const d = new Date();
+export const getWeekNumber = (d) => {
   d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay()||7));
   var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
   var weekNo = Math.ceil(( ( (d - yearStart) / 86400000) + 1)/7);
