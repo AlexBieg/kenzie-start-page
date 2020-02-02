@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/kenzie-start-page/static/css/main.bf95fc68.chunk.css",
-    "main.js": "/kenzie-start-page/static/js/main.7061527f.chunk.js",
-    "main.js.map": "/kenzie-start-page/static/js/main.7061527f.chunk.js.map",
+    "main.css": "/kenzie-start-page/static/css/main.7f2bd8e6.chunk.css",
+    "main.js": "/kenzie-start-page/static/js/main.989325cc.chunk.js",
+    "main.js.map": "/kenzie-start-page/static/js/main.989325cc.chunk.js.map",
     "runtime-main.js": "/kenzie-start-page/static/js/runtime-main.f8b713bf.js",
     "runtime-main.js.map": "/kenzie-start-page/static/js/runtime-main.f8b713bf.js.map",
     "static/js/2.02e10f7a.chunk.js": "/kenzie-start-page/static/js/2.02e10f7a.chunk.js",
     "static/js/2.02e10f7a.chunk.js.map": "/kenzie-start-page/static/js/2.02e10f7a.chunk.js.map",
     "index.html": "/kenzie-start-page/index.html",
-    "precache-manifest.a9b4af31f185d20ad4a26edc54d1a67a.js": "/kenzie-start-page/precache-manifest.a9b4af31f185d20ad4a26edc54d1a67a.js",
+    "precache-manifest.0c9561db8c836134fc23ce92d4a976a9.js": "/kenzie-start-page/precache-manifest.0c9561db8c836134fc23ce92d4a976a9.js",
     "service-worker.js": "/kenzie-start-page/service-worker.js",
-    "static/css/main.bf95fc68.chunk.css.map": "/kenzie-start-page/static/css/main.bf95fc68.chunk.css.map",
+    "static/css/main.7f2bd8e6.chunk.css.map": "/kenzie-start-page/static/css/main.7f2bd8e6.chunk.css.map",
     "static/js/2.02e10f7a.chunk.js.LICENSE.txt": "/kenzie-start-page/static/js/2.02e10f7a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f8b713bf.js",
     "static/js/2.02e10f7a.chunk.js",
-    "static/css/main.bf95fc68.chunk.css",
-    "static/js/main.7061527f.chunk.js"
+    "static/css/main.7f2bd8e6.chunk.css",
+    "static/js/main.989325cc.chunk.js"
   ]
 }
