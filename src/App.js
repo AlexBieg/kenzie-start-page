@@ -4,7 +4,7 @@ import THINGS from './things.js';
 import { getWeekNumber, useInterval, getTimeText, getDateText } from './utils';
 
 const weekNum = getWeekNumber();
-const baseBackgroundURL = '/background/sputnik-';
+const baseBackgroundURL = 'background/sputnik-';
 const backgroundChoice = Math.floor(Math.random() * 10 + 1);
 
 function App() {
