@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kenzie-start-page/precache-manifest.af71d021d73a34e4e67dcbbcaecb0bfb.js"
+  "/kenzie-start-page/precache-manifest.e46e31ecf389a9d803e178204a7b169f.js"
 );
 
 self.addEventListener('message', (event) => {
