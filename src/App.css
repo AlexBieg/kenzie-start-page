@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,400&display=swap');
 
 .App {
   text-align: center;
@@ -6,66 +6,44 @@
   flex-direction: column;
   height: 100%;
   justify-content: space-evenly;
-  background: #526f84;
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  background-size: cover;
-  background-position: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .background {
   width: 100%;
   height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+  animation: fadein 1s;
 }
 
-.background img {
-  height: 100%;
+.background.hidden {
+  display: none;
 }
 
 .date {
   font-size: 80px;
+  animation: fadein 2s;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .saying {
   font-size: 45px;
   display: flex;
   align-items: center;
+  animation: fadein 2s;
+  flex: 1;
+}
+
+.saying .text {
+  font-style: italic;
 }
 
 .arrow {
@@ -87,4 +65,10 @@
 
 .saying-item {
   flex: 1;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
