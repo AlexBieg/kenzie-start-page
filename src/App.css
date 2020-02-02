@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap');
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  background: #526f84;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  background-size: cover;
+  background-position: center;
 }
 
 .App-logo {
@@ -35,4 +47,43 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+}
+
+.background img {
+  height: 100%;
+}
+
+.date {
+  font-size: 80px;
+}
+
+.saying {
+  font-size: 45px;
+  display: flex;
+}
+
+.arrow {
+  margin: 0px 20px;
+  font-weight: 400;
+  padding: 0px 15px;
+  border-radius: 50%;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  flex: 1;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.saying-item {
+  flex: 1;
 }
