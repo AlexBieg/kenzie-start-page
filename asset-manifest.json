@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/kenzie-start-page/static/css/main.bf95fc68.chunk.css",
+    "main.js": "/kenzie-start-page/static/js/main.2248a020.chunk.js",
+    "main.js.map": "/kenzie-start-page/static/js/main.2248a020.chunk.js.map",
+    "runtime-main.js": "/kenzie-start-page/static/js/runtime-main.f8b713bf.js",
+    "runtime-main.js.map": "/kenzie-start-page/static/js/runtime-main.f8b713bf.js.map",
+    "static/js/2.02e10f7a.chunk.js": "/kenzie-start-page/static/js/2.02e10f7a.chunk.js",
+    "static/js/2.02e10f7a.chunk.js.map": "/kenzie-start-page/static/js/2.02e10f7a.chunk.js.map",
+    "index.html": "/kenzie-start-page/index.html",
+    "precache-manifest.7d0a2112086ad4814fa6305d4070924e.js": "/kenzie-start-page/precache-manifest.7d0a2112086ad4814fa6305d4070924e.js",
+    "service-worker.js": "/kenzie-start-page/service-worker.js",
+    "static/css/main.bf95fc68.chunk.css.map": "/kenzie-start-page/static/css/main.bf95fc68.chunk.css.map",
+    "static/js/2.02e10f7a.chunk.js.LICENSE.txt": "/kenzie-start-page/static/js/2.02e10f7a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8b713bf.js",
+    "static/js/2.02e10f7a.chunk.js",
+    "static/css/main.bf95fc68.chunk.css",
+    "static/js/main.2248a020.chunk.js"
+  ]
+}
