@@ -34,6 +34,10 @@
   justify-content: flex-end;
 }
 
+.text-wrapper {
+  flex: 1;
+}
+
 .saying {
   font-size: 45px;
   display: flex;
@@ -44,6 +48,14 @@
 
 .saying .text {
   font-style: italic;
+}
+
+.saying .text {
+  animation: fadein 1s;
+}
+
+.saying .text.hidden {
+  display: none;
 }
 
 .arrow {

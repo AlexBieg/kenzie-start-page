@@ -32,5 +32,24 @@ export const getTimeText = (date) => {
 }
 
 export const getDateText = (date) => {
-  return date.toLocaleDateString('en-US', {weekday: 'long', month: 'long', day: 'numeric'});
+  return date.toLocaleDateString('en-US', {weekday: 'long', month: 'long', day: 'numeric'}) + getDateSuffix(date);
+}
+
+export const getDateSuffix = (date) => {
+  const num = date.getDate();
+
+  if (num > 3 && num < 21) return 'th';
+
+  switch (num % 10) {
+    case 1:  return "st";
+    case 2:  return "nd";
+    case 3:  return "rd";
+    default: return "th";
+  }
+}
+
+export const getRandomBackgroundUrl = () => {
+  const baseBackgroundURL = 'background/sputnik-';
+  const backgroundChoice = Math.floor(Math.random() * 10 + 1);
+  return `${baseBackgroundURL}${backgroundChoice}.jpg`;
 }
