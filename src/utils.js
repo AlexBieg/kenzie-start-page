@@ -28,7 +28,7 @@ export const getWeekNumber = (d) => {
 }
 
 export const getTimeText = (date) => {
-  return date.toLocaleDateString('en-US', {timeStyle: 'short'})
+  return `${date.getHours() % 12}:${date.getMinutes()}`;
 }
 
 export const getDateText = (date) => {
