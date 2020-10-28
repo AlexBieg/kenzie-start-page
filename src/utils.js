@@ -53,3 +53,15 @@ export const getRandomBackgroundUrl = () => {
   const backgroundChoice = Math.floor(Math.random() * 10 + 1);
   return `${baseBackgroundURL}${backgroundChoice}.jpg`;
 }
+
+export const getDistance = () => {
+  const earthSpeed = 390;
+  const kenzieBirthDate = new Date(1994, 10, 28);
+  const kToM = 0.621371;
+
+  const dif = (new Date()).getTime() - kenzieBirthDate.getTime();
+
+  const Seconds_from_T1_to_T2 = dif / 1000;
+  const secDiff = Math.abs(Seconds_from_T1_to_T2);
+  return Math.round(secDiff * earthSpeed * kToM);
+}

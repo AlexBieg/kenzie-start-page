@@ -16,3 +16,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.distance {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.odometer {
+  font-size: 30px;
+  font-weight: normal;
+}

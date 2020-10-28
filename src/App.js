@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import THINGS from './things.js';
-import { getWeekNumber, useInterval, getTimeText, getDateText, getRandomBackgroundUrl } from './utils';
+import { getWeekNumber, useInterval, getTimeText, getDateText, getRandomBackgroundUrl, getDistance } from './utils';
+import Odometer from 'react-odometerjs';
+
 
 const weekNum = getWeekNumber(new Date());
 
@@ -10,6 +12,7 @@ function App() {
   const [currWeek, setCurrWeek] = useState(weekNum);
   const [placeholderUrl, setUrl] = useState(getRandomBackgroundUrl());
   const [backgroundUrl, setBackgroundUrl] = useState('');
+  const [distance, setDistance] = useState(getDistance())
 
   useEffect(() => {
     setBackgroundUrl('');
@@ -24,6 +27,10 @@ function App() {
   useInterval(() => {
     setDate(new Date());
   }, 1000);
+
+  useInterval(() => {
+    setDistance(getDistance());
+  }, 2000);
 
   useInterval(() => {
     setUrl(getRandomBackgroundUrl())
@@ -62,6 +69,11 @@ function App() {
             currWeek < weekNum && <span className="arrow" onClick={nextWeek}>></span>
           }
         </span>
+      </div>
+      <div className="distance">
+        <div>You have traveled</div>
+        <Odometer value={distance.toLocaleString()} />
+        <div>miles since you were born</div>
       </div>
     </div>
   );
