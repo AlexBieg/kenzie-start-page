@@ -30,7 +30,7 @@ function App() {
 
   useInterval(() => {
     setDistance(getDistance());
-  }, 2000);
+  }, 2500);
 
   useInterval(() => {
     setUrl(getRandomBackgroundUrl())

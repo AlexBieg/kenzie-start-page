@@ -28,7 +28,13 @@ export const getWeekNumber = (d) => {
 }
 
 export const getTimeText = (date) => {
-  return `${date.getHours() % 12}:${date.getMinutes()}`;
+  let minutes = date.getMinutes();
+
+  if (minutes < 10) {
+    minutes = '0' + minutes;
+  }
+
+  return `${date.getHours() % 12}:${minutes}`;
 }
 
 export const getDateText = (date) => {
